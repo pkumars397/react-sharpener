@@ -2,6 +2,7 @@
 import ExpenseItems from "./components/ExpenseItems";
 
 function App() {
+  // console.log("Parent-render");
   const expenses = [
     {
       id: "e1",
@@ -61,7 +62,7 @@ function App() {
       ></ExpenseItems> */}
       {expenses.map((item) => (
         <ExpenseItems
-          title={item.name}
+          title={item.title}
           price={item.amount}
           date={item.date}
           locationOfExpense={item.locationOfExpense}

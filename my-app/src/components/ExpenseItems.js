@@ -1,15 +1,17 @@
 import "./ExpenseItems.css";
-
+import ExpenseDate from "./ExpenseDate.js";
+import ExpenseDetails from "./ExpenseDetails.js";
 function ExpenseItems(props) {
-  console.log(props);
+  // console.log("Child-render");
+  // console.log(props);
   return (
     <div className="expense-item">
-      <div>{props.date.toLocaleDateString()}</div>
-      <div className="expense-item__description">
-        <h2>{props.title}</h2>
-        <div className="expense-item__price">{props.price}</div>
-        <h3>{props.locationOfExpense}</h3>
-      </div>
+      <ExpenseDate date={props.date} />
+      <ExpenseDetails
+        title={props.title}
+        locationOfExpense={props.locationOfExpense}
+        price={props.price}
+      />
     </div>
   );
 }
