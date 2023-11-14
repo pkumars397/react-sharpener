@@ -1,6 +1,6 @@
 // import "./App.css";
 import ExpenseItems from "./components/ExpenseItems";
-
+import Ex from "./components/Ex";
 function App() {
   // console.log("Parent-render");
   const expenses = [
@@ -68,6 +68,7 @@ function App() {
           locationOfExpense={item.locationOfExpense}
         />
       ))}
+      <Ex></Ex>
     </div>
   );
 }
