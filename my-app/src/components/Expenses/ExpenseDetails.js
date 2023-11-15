@@ -1,4 +1,4 @@
-function ExpenseDetails(props) {
+const ExpenseDetails = (props) => {
   console.log(props);
   return (
     <div className="expense-item__description">
@@ -7,5 +7,5 @@ function ExpenseDetails(props) {
       <h3>{props.locationOfExpense}</h3>
     </div>
   );
-}
+};
 export default ExpenseDetails;

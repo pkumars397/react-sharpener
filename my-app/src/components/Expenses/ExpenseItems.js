@@ -1,8 +1,8 @@
 import "./ExpenseItems.css";
 import ExpenseDate from "./ExpenseDate.js";
 import ExpenseDetails from "./ExpenseDetails.js";
-import Card from "./Card.js";
-function ExpenseItems(props) {
+import Card from "../UI/Card.js";
+const ExpenseItems = (props) => {
   // console.log("Child-render");
   // console.log(props);
   return (
@@ -15,6 +15,6 @@ function ExpenseItems(props) {
       />
     </Card>
   );
-}
+};
 
 export default ExpenseItems;

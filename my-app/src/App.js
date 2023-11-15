@@ -1,7 +1,7 @@
 // import "./App.css";
-import ExpenseItems from "./components/ExpenseItems";
-import Ex from "./components/Ex";
-function App() {
+import ExpenseItems from "./components/Expenses/ExpenseItems";
+import Ex from "./components/Expenses/Ex";
+const App = () => {
   // console.log("Parent-render");
   const expenses = [
     {
@@ -71,6 +71,6 @@ function App() {
       <Ex></Ex>
     </div>
   );
-}
+};
 
 export default App;
