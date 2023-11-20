@@ -5,6 +5,9 @@ import Card from "../UI/Card.js";
 const ExpenseItems = (props) => {
   // console.log("Child-render");
   // console.log(props);
+  const clickHandl=()=>{
+    console.log("deleted")
+  }
   return (
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
@@ -13,6 +16,7 @@ const ExpenseItems = (props) => {
         locationOfExpense={props.locationOfExpense}
         price={props.price}
       />
+      <button onClick={}>Delete Expense</button>
     </Card>
   );
 };
