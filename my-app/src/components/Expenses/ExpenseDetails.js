@@ -1,5 +1,4 @@
 const ExpenseDetails = (props) => {
-  console.log(props);
   return (
     <div className="expense-item__description">
       <h2>{props.title}</h2>

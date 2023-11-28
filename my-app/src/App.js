@@ -1,6 +1,7 @@
 // import "./App.css";
 import ExpenseItems from "./components/Expenses/ExpenseItems";
 import Ex from "./components/Expenses/Ex";
+import ExpenseForm from "./components/Expenses/ExpenseForm";
 const App = () => {
   // console.log("Parent-render");
   const expenses = [
@@ -68,7 +69,7 @@ const App = () => {
           locationOfExpense={item.locationOfExpense}
         />
       ))}
-      <Ex></Ex>
+      <ExpenseForm/>
     </div>
   );
 };
