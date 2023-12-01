@@ -4,8 +4,6 @@ import ExpenseDetails from "./ExpenseDetails.js";
 import Card from "../UI/Card.js";
 import { useState } from "react";
 const ExpenseItems = (props) => {
-  // console.log("Child-render");
-  // console.log(props);
   const [title, setTitle] = useState(props.title);
   const clickHandle = () => {
     setTitle("updated");
