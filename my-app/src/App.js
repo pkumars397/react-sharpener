@@ -32,9 +32,12 @@ const App = () => {
       locationOfExpense: "Bangalore",
     },
   ];
+  const onAddExpenseHandler = (expense) => {
+    console.log(expense, "in app js");
+  };
   return (
     <>
-      <NewExpense />
+      <NewExpense onAddExpense={onAddExpenseHandler} />
       <div className="App" style={{ width: "60%", margin: "auto" }}>
         {expenses.map((item) => (
           <ExpenseItems
